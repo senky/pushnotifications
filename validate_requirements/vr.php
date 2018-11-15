@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="https://senky.github.io/pushnotifications/style.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
 
@@ -25,19 +25,19 @@
         <span class="nav-logo-desktop"><span class="blue">phpBB</span> Browser & Mobile <b>Notifications</b></span>
         <ul class="navbar-nav ml-auto nav-right" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
           <li class="nav-item nav-custom-link">
-            <a class="nav-link" href="index.html">Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+            <a class="nav-link" href="https://senky.github.io/pushnotifications/">Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
           </li>
           <li class="nav-item nav-custom-link">
-            <a class="nav-link" href="#features">Features <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+            <a class="nav-link" href="https://senky.github.io/pushnotifications/#features">Features <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
           </li>
           <!-- <li class="nav-item nav-custom-link">
             <a class="nav-link" href="#testimonials">Testimonials <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
           </li> -->
           <li class="nav-item nav-custom-link">
-            <a class="nav-link" href="#pricing">Pricing <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+            <a class="nav-link" href="https://senky.github.io/pushnotifications/#pricing">Pricing <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
           </li>
           <li class="nav-item nav-custom-link btn btn-demo-small">
-            <a class="nav-link" href="#pricing">Buy now <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+            <a class="nav-link" href="https://senky.github.io/pushnotifications/#pricing">Buy now <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
           </li>
         </ul>
       </div>
@@ -45,139 +45,91 @@
   </nav>
   <!-- E N D  N A V B A R -->
   
-  <!-- H E R O -->
-  <section id="hero">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-          <img id="hero-img" src="images/phone.png" class="img-fluid" alt="Demo image">
-        </div>
-        <div class="col-md-7 content-box hero-content">
-          <span>phpBB</span>
-          <h1>Browser & Mobile <b>Notifications</b></h1>
-          <p>Boost your board engagement. Significantly.</p>
-          <a href="#features" class="btn btn-regular">Learn more</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- E N D  H E R O -->
+  <!-- P R I C I N G -->
+  <section id="success">
+	<div class="container">
+		<div class="title-block">
+<?php
 
-  <!-- E N D  M A R K E T I N G -->
-  <section id="features">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-5">
-          <div class="content-box">
-            <span>Raise your community</span>
-            <h2>Boost engagement significantly</h2>
-            <p>Make your board buzzy like a beehive again. Browser notifications improve engagement drastically.</p>
-            <a href="https://blog.markgrowth.com/7-surprising-facts-about-web-push-notifications-9a265788264a" class="btn btn-regular" target="_blank">Read more</a>
-          </div>
-        </div>
-        <div class="col-md-7">
-            <img src="images/boost-engagement.png" class="img-fluid" alt="Boost engagement significantly">
-        </div>
-      </div>
+	$is_phpbb = false;
+	if (file_exists('./includes/constants.php'))
+	{
+		@define('IN_PHPBB', true);
+		include('./includes/constants.php');
+		if (defined('PHPBB_VERSION'))
+		{
+			$is_phpbb = true;
+		}
+	}
 
-      <div class="row">
-        <div class="col-md-7">
-            <img src="images/off-site-notifications.gif" class="img-fluid" alt="Off-site notifications">
-        </div>
-        <div class="col-md-5">
-          <div class="content-box">
-            <span>24/7</span>
-            <h2>Off-site notifications</h2>
-            <p>Let your users receive notifications even when they don't browse your board. Even when they close their browser! Now they won't miss any time-sensitive PM, new auction bid or guild rules change.</p>
-            <a href="javascript:;" class="btn btn-regular" data-toggle="modal" data-target="#offSiteModal">How is that possible?</a>
-          </div>
-        </div>
-      </div>
+	if (!$is_phpbb){
+?>
+		<h2>Hups!</h2>
+		<p>
+			This isn't a phpBB installation. Are you sure you uploaded the file to the right folder?
+		</p>
+<?php
+	} else {
+		$https = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') || $_SERVER['SERVER_PORT'] == 443);
+		$php = version_compare(PHP_VERSION, '7.1.0', '>=');
+		$phpbb = version_compare(PHPBB_VERSION, '3.2.0', '>=');
+		$gmp = extension_loaded('gmp');
+		$mbstring = extension_loaded('mbstring');
+		$curl = extension_loaded('curl');
+		$openssl = extension_loaded('openssl');
+	if ($https && $php && $phpbb && $gmp && $mbstring && $curl && $openssl){
+?>
+		<h2>Awesome!</h2>
+		<p>
+			Your board is ready for Browser and Mobile Notifications Extension!<br><br>
+			Go ahead and <a href="#pricing">purchase a licence</a> for your right now.
+		</p>
+<?php
+	} else {
+?>
+		<h2>Oh no!</h2>
+		<ul>
+<?php
+	if (!$https) {
+		echo '<li>HTTPS is not set for this domain.</li>';
+	}
+	if (!$php) {
+		echo '<li>PHP version is older than 7.1.0.</li>';
+	}
+	if (!$phpbb) {
+		echo '<li>phpBB version is older than 3.2.0.</li>';
+	}
+	if (!$gmp) {
+		echo '<li>GMP PHP extension is not installed.</li>';
+	}
+	if (!$mbstring) {
+		echo '<li>mbstring PHP extension is not installed.</li>';
+	}
+	if (!$curl) {
+		echo '<li>CURL PHP extension is not installed.</li>';
+	}
+	if (!$openssl) {
+		echo '<li>OpenSSL PHP extension is not installed.</li>';
+	}
+?> 
+		</ul>
+		<p>
+			<br><br>This means Browser and Mobile Notifications Extension can't be installed on your board yet.<br><br>
+			Contact your provider to resolve the issues, it shouldn't be a big deal for them.<br><br>
+			Once they are done, check this again to verify your server is ready for the extension.
+		</p>
+<?php
+	}
+	}
+?>
+		</div>
+	</div>
+	</section>
+	<!-- E N D  P R I C I N G -->
 
-      <div class="row">
-          <div class="col-md-5">
-            <div class="content-box">
-              <span>Just use it</span>
-              <h2>Wide browser support</h2>
-              <p>Chrome, Firefox, Opera, Edge, even UC Browser - almost every user is already capable of receiving this type of&nbsp;notifications.</p>
-              <a href="javascript:;" class="btn btn-regular" data-toggle="modal" data-target="#browsersModal">See all supported browsers</a>
-            </div>
-          </div>
-          <div class="col-md-7">
-              <img src="images/wide-browser-support.png" class="img-fluid" alt="Wide browser support">
-          </div>
-        </div>
-  
-      <div class="row">
-        <div class="col-md-7">
-            <img src="images/non-intrusive.gif" class="img-fluid" alt="Non-intrusive subscription">
-        </div>
-        <div class="col-md-5">
-          <div class="content-box">
-            <span>Abused user is a lost user</span>
-            <h2>Non-intrusive subscription</h2>
-            <p>Request user for permission only after proper explanation and motivation. Just like it should be done.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-5">
-          <div class="content-box">
-            <span>Trusted developer</span>
-            <h2>From official extensions author</h2>
-            <p>Being a member of <a href="https://www.phpbb.com/community/memberlist.php?mode=group&g=7331">Extension Customisations group</a> and one of 3 members of <a href="https://github.com/orgs/phpbb-extensions/teams/extensions-development-team">Official Extensions Development Team</a> tells itself about the quality of the extension.</p>
-            <a href="https://www.phpbb.com/customise/db/author/senky/contributions" class="btn btn-regular" target="_blank">See author's extensions</a>
-          </div>
-        </div>
-        <div class="col-md-7">
-            <img src="images/trusted-developer.png" class="img-fluid" alt="Trusted Developer">
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- E N D  M A R K E T I N G -->
-
-  <!-- T E S T I M O N I A L S
-  <section id="testimonials">
-    <div class="container">
-      <div class="title-block">
-        <h2>The Best Digital Agencies Recommend Our Software</h2>
-        <p>Industry experts mention their experience using our software and the excellent results they have achieved</p>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="testimonial-box">
-            <div class="row personal-info">
-              <div class="col-md-2 col-xs-2">
-                <div class="profile-picture review-one"></div>
-              </div>
-              <div class="col-md-10 col-xs-10">
-                <h6>Joshua M. Salas <span class="rating">5 <i class="icon ion-md-star"></i></span></h6>
-                <small>Marketing Intelligence | Author & Content Creator</small>
-              </div>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque, tortor nec mattis feugiat, velit purus euismod odio, quis vulputate velit urna sit amet enim. Maecenas vulputate auctor ligula sed sollicitudin.</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="testimonial-box">
-            <div class="row personal-info">
-              <div class="col-md-2 col-xs-2">
-                <div class="profile-picture review-one"></div>
-              </div>
-              <div class="col-md-10 col-xs-10">
-                <h6>Michael Edwards <span class="rating">5 <i class="icon ion-md-star"></i></span></h6>
-                <small>Seo Consultant | Author & Content Creator</small>
-              </div>
-            </div>
-            <p>In euismod, metus ac elementum tincidunt, dui eros ullamcorper lorem, at euismod augue augue quis leo. Fusce non dui augue. In hac habitasse platea dictumst. Mauris quis lacinia mauris. Proin ut pretium quam. Nam at ex finibus.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-   E N D  T E S T I M O N I A L S -->
+<?php
+	if ($is_phpbb && $https && $php && $phpbb && $gmp && $mbstring && $curl && $openssl){
+?>
 
   <!-- P R I C I N G -->
   <section id="pricing">
@@ -254,7 +206,6 @@
       <div class="note-block">
           <p>
             * You will receive a one-time download link on email you enter to PayPal within next 24h.<br>
-            Make sure to check <a href="javascript:;" data-toggle="modal" data-target="#requirementsModal">extension requirements</a> before purchase.
           </p>
           <p></p>
         </div>
@@ -352,7 +303,7 @@
             <li>You <b>cannot</b> create another product for multiple clients and/or one client used on multiple website.</li>
           </ul>
           <h2>Full license</h2>
-          <p><a href="standard-license.txt">Download full license</a></p>
+          <p><a href="https://senky.github.io/pushnotifications/standard-license.txt">Download full license</a></p>
         </div>
       </div>
     </div>
@@ -376,7 +327,7 @@
             <li>You <b>cannot</b> create another product for multiple clients and/or one client used on more than five website.</li>
           </ul>
           <h2>Full license</h2>
-          <p><a href="extended-license.txt">Download full license</a></p>
+          <p><a href="https://senky.github.io/pushnotifications/extended-license.txt">Download full license</a></p>
         </div>
       </div>
     </div>
@@ -399,44 +350,12 @@
             <li>You <b>cannot</b> create multiple products from the extension.</li>
           </ul>
           <h2>Full license</h2>
-          <p><a href="reseller-license.txt">Download full license</a></p>
+          <p><a href="https://senky.github.io/pushnotifications/reseller-license.txt">Download full license</a></p>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal fade" id="requirementsModal" tabindex="-1" role="dialog" aria-labelledby="requirementsModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="requirementsModalLabel">Extension Requirements</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <ul>
-              <li>PHP 7.1</li>
-              <li>GMP PHP extension</li>
-              <li>mbstring PHP extension</li>
-              <li>curl PHP extension</li>
-              <li>OpenSSL PHP extension</li>
-              <li>phpBB 3.2.0</li>
-              <li>HTTPS on the domain</li>
-            </ul>
-            <p>To see if your board complies with the requirements:</p>
-            <ol>
-              <li>See if your board URL starts with https://</li>
-              <li>Go to ACP and in Board statistics verify that Board version is 3.2.0 or higher.</li>
-              <li>Go to ACP -> System -> PHP information and under PHP logo see if your version is 7.1.0 or higher.</li>
-              <li>Go to ACP -> System -> PHP information and search for "gmp", "mbstring", "curl" and "openssl" headers. If header is present, it means you have the extension installed.</li>
-            </ol>
-            <p>or <a href="validate_requirements.zip">download a script</a> that will find it out for you.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  
     <!-- External JavaScripts -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -449,17 +368,8 @@
         return atob(part);
       }).join('');
     </script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7430979-7"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-7430979-7', {
-        'anonymize_ip': true
-      });
-    </script>
+<?php
+	}
+?>
   </body>
 </html>
