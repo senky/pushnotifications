@@ -253,6 +253,7 @@
       </div>
       <div class="note-block">
           <p>* You will receive a one-time download link on email you enter to PayPal within next 24h.</p>
+          <p></p>
         </div>
     </div>
   </section>
@@ -412,6 +413,18 @@
       document.querySelector('#contact-btn').href = parts.map(function(part) {
         return atob(part);
       }).join('');
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7430979-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-7430979-7', {
+        'anonymize_ip': true
+      });
     </script>
   </body>
 </html>
