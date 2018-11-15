@@ -254,7 +254,7 @@
       <div class="note-block">
           <p>
             * You will receive a one-time download link on email you enter to PayPal within next 24h.<br>
-            Make sure to check <a href="javascript:;" data-toggle="modal" data-target="#requirementsModal">extension requirements</a> before purchase.
+            Make sure to check <a href="javascript:;" data-toggle="modal" data-target="#requirementsModal">extension requirements</a> and <a href="javascript:;" data-toggle="modal" data-target="#stylesModal">supported styles</a> before purchase.
           </p>
           <p></p>
         </div>
@@ -268,7 +268,7 @@
       <h2>Questions before purchase?</h2>
       <div class="title-block">
         <p>Don't hesitate to drop me a message. Better ask than sorry.</p>
-        <a id="contact-btn" href="#" class="btn btn-regular">Contact author</a>
+        <a href="#" class="contact-btn btn btn-regular">Contact author</a>
       </div>
     </div>
   </section>
@@ -437,6 +437,34 @@
       </div>
     </div>
   
+    <div class="modal fade" id="stylesModal" tabindex="-1" role="dialog" aria-labelledby="stylesModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="stylesModalLabel">Supported styles</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>Absolution</li>
+              <li>BBOOTS</li>
+              <li>FLATBOOTS</li>
+              <li>prosilver</li>
+              <li>Ravaio</li>
+              <li>SE Square Left</li>
+              <li>we_universal</li>
+            </ul>
+            <p>
+              Implicitly, the extension also works with any
+              <a target="_blank" href="https://www.phpbb.com/customise/db/styles/board_styles/prosilver_based-19">prosilver-based style</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
     <!-- External JavaScripts -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -445,9 +473,11 @@
       var parts = [
         'bWFpbHRvOg==', 'amFrdWJzZW5rbw==', 'QGdtYWls', 'LmNvbQ=='
       ];
-      document.querySelector('#contact-btn').href = parts.map(function(part) {
-        return atob(part);
-      }).join('');
+      document.querySelectorAll('.contact-btn').forEach(function(elem) {
+        elem.href = parts.map(function(part) {
+          return atob(part);
+        }).join('')
+      });
     </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
