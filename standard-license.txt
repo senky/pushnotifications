@@ -23,7 +23,7 @@ Standard License for Browser and Mobile Notifications Extension by Jakub Senko
    to receive the Security and Bug updates of the Item within next two years.
 
 3. You are licensed to use the Item to create one single End Product for yourself
-   or for one client (a "single application").
+   or for one client.
 
 4. You can create one End Product for a client, and you can transfer that single
    End Product to your client for any fee. This license is then transferred
@@ -65,3 +65,10 @@ Standard License for Browser and Mobile Notifications Extension by Jakub Senko
     these terms for 15 EUR. This license is between the author of the Item and you.
 
 15. You are not eligible for a refund of already purchased license.
+
+16. The Item is provided "as is", without warranty of any kind, express or implied,
+    including but not limited to the warranties of merchantability, fitness
+    for a particular purpose and noninfringement. In no event shall the author
+    be liable for any claim, damages or other liability, whether in an action
+    of contract, tort or otherwise, arising from, out of or in connection with
+    the Item or the use or other dealings in the Item.
