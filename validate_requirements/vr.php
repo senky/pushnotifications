@@ -203,12 +203,6 @@
           </div>
         </div>
       </div>
-      <div class="note-block">
-          <p>
-            * You will receive a one-time download link on email you enter to PayPal within next 24h.<br>
-          </p>
-          <p></p>
-        </div>
     </div>
   </section>
   <!-- E N D  P R I C I N G -->
