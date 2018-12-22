@@ -131,14 +131,64 @@
 	if ($is_phpbb && $https && $php && $phpbb && $gmp && $mbstring && $curl && $openssl){
 ?>
 
-  <!-- P R I C I N G -->
-  <section id="pricing">
+   <!-- P R I C I N G -->
+   <section id="pricing">
     <div class="container">
       <div class="title-block">
         <h2>Pricing</h2>
         <p>Buy once, enjoy forever.</p>
       </div>
       <div class="row">
+        <div class="col-md-4">
+          <div class="pricing-box">
+            <h3>Translator License</h3>
+            <h6 style="font-weight: normal;">FREE</h6>
+            <small>forever</small>
+            <p>Help me translate this extension into your language</p>
+            <div class="divider-light"></div>
+            <ul>
+              <li><i class="far fa-check-circle demo"></i>1 site license</li>
+              <li><i class="far fa-check-circle demo"></i>Security and bug fixes</li>
+              <li style="padding-bottom: 11px;"><i class="far fa-check-circle demo"></i>New feature updates after<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;translating new entries</li>
+            </ul>
+            <style>
+              #translator-btn {
+                position: relative;
+                width: 100%;
+              }
+              #translator-btn:before {
+                content: "";
+                display: block;
+                padding-top: 25.8%;
+              }
+              #translator-btn a {
+                position:  absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                background-color: #ffc439;
+                color: #000000;
+                font-weight: bold;
+                font-size: 17px;
+                border: 1px solid #db901e;
+                border-radius: 5px !important;
+                margin-top: 20px;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+              }
+            </style>
+            <div id="translator-btn" class="text-center">
+                <a href="#" class="contact-btn btn btn-regular" title="Contact author using email">Contact author</a>
+            </div>
+            <div class="text-center">
+              <a class="license-link" href="javascript:;" data-toggle="modal" data-target="#translatorLicenseModal" title="See details of Translator License">See license details</a>
+            </div>
+          </div>
+        </div>
+
         <div class="col-md-4">
           <div class="pricing-box">
             <h3>Standard License</h3>
@@ -153,13 +203,14 @@
               <li><i class="far fa-times-circle demo"></i>New feature updates</li>
             </ul>
             <div class="text-center">
-              <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VNVQVLK2W73C8"><img style="width: 100%; margin-top: 20px;" src="https://www.paypalobjects.com/webstatic/mktg/merchant_portal/button/buynow.en.png" alt="Buy Standard License"></a>
+              <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VNVQVLK2W73C8" title="Buy Standard License now"><img style="width: 100%; margin-top: 20px;" src="https://www.paypalobjects.com/webstatic/mktg/merchant_portal/button/buynow.en.png" alt="Buy Standard License"></a>
             </div>
             <div class="text-center">
-              <a class="license-link" href="javascript:;" data-toggle="modal" data-target="#standardLicenseModal">See license details</a>
+              <a class="license-link" href="javascript:;" data-toggle="modal" data-target="#standardLicenseModal" title="See details of Standard License">See license details</a>
             </div>
           </div>
         </div>
+
         <div class="col-md-4">
           <div class="pricing-box">
             <h3>Extended License</h3>
@@ -174,13 +225,15 @@
               <li><i class="far fa-check-circle demo"></i>New feature updates <span class="demo">¡Hot!</span></li>
             </ul>
             <div class="text-center">
-              <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MB2ECFL3XKBTC"><img style="width: 100%; margin-top: 20px;" src="https://www.paypalobjects.com/webstatic/mktg/merchant_portal/button/buynow.en.png" alt="Buy Extended License"></a>
+              <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MB2ECFL3XKBTC" title="Buy Extended License now"><img style="width: 100%; margin-top: 20px;" src="https://www.paypalobjects.com/webstatic/mktg/merchant_portal/button/buynow.en.png" alt="Buy Extended License"></a>
             </div>
             <div class="text-center">
-              <a class="license-link" href="javascript:;" data-toggle="modal" data-target="#extendedLicenseModal">See license details</a>
+              <a class="license-link" href="javascript:;" data-toggle="modal" data-target="#extendedLicenseModal" title="See details of Extended License">See license details</a>
             </div>
           </div>
         </div>
+
+        <!--
         <div class="col-md-4">
           <div class="pricing-box">
             <h3>Reseller License</h3>
@@ -195,14 +248,21 @@
               <li><i class="far fa-check-circle demo"></i>New feature updates</li>
             </ul>
             <div class="text-center">
-              <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=R57HSV62PYBHS"><img style="width: 100%; margin-top: 20px;" src="https://www.paypalobjects.com/webstatic/mktg/merchant_portal/button/buynow.en.png" alt="Buy Reseller License"></a>
+              <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=R57HSV62PYBHS" title="Buy Reseller License now"><img style="width: 100%; margin-top: 20px;" src="https://www.paypalobjects.com/webstatic/mktg/merchant_portal/button/buynow.en.png" alt="Buy Reseller License"></a>
             </div>
             <div class="text-center">
-              <a class="license-link" href="javascript:;" data-toggle="modal" data-target="#resellerLicenseModal">See license details</a>
+              <a class="license-link" href="javascript:;" data-toggle="modal" data-target="#resellerLicenseModal" title="See details of Reseller License">See license details</a>
             </div>
           </div>
         </div>
+        -->
       </div>
+      <div class="note-block">
+          <p>
+          * Make sure to check <a href="javascript:;" data-toggle="modal" data-target="#requirementsModal" title="See extension reqirements">extension requirements</a>, <a href="javascript:;" data-toggle="modal" data-target="#stylesModal" title="See supported styles">supported styles</a> and <a href="javascript:;" data-toggle="modal" data-target="#translationsModal" title="See supported translations">translations</a> before purchase.
+          </p>
+          <p></p>
+        </div>
     </div>
   </section>
   <!-- E N D  P R I C I N G -->
@@ -279,6 +339,30 @@
     </div>
   </div>
     
+  <div class="modal fade" id="translatorLicenseModal" tabindex="-1" role="dialog" aria-labelledby="translatorLicenseModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="translatorLicenseModalLabel">Translator License</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h2>In short</h2>
+          <ul>
+            <li>You <b>can</b> use extension on one website.</li>
+            <li>You <b>can</b> create another product for one client on one website.</li>
+            <li>You <b>cannot</b> use extension on multiple websites.</li>
+            <li>You <b>cannot</b> create another product for multiple clients and/or one client used on multiple website.</li>
+          </ul>
+          <h2>Full license</h2>
+          <p><a href="translator-license.txt" title="Download Translator License now">Download full license</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="modal fade" id="standardLicenseModal" tabindex="-1" role="dialog" aria-labelledby="standardLicenseModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
@@ -350,6 +434,25 @@
     </div>
   </div>
 
+  <div class="modal fade" id="translationsModal" tabindex="-1" role="dialog" aria-labelledby="translationsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="translationsModalLabel">Extension translations</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <ul>
+                <li>English (UK and US)</li>
+                <li>Slovak</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    
     <!-- External JavaScripts -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -1,0 +1,72 @@
+Translator License for Browser and Mobile Notifications Extension by Jakub Senko
+
+1. Definitions
+*Item* is Browser and Mobile Notifications Extension by Jakub Senko.
+
+*Website* is a set of related web pages located under a single domain name.
+
+*Security update* is a new version of the Item which reduces the risk
+                  of security breach through the public endpoints of the Item.
+
+*Bug update* is a new version of the Item which removes some unintended behaviour
+             of the Item.
+
+*End product* is a work that incorporates the Item as well as other things,
+              so that it is larger in scope and different in nature than the Item.
+
+*Sell* or *Sold* means sell, license, sub-license or distribute for any type
+                 of fee or charge.
+
+
+2. The Translator License grants you, the purchaser, an ongoing, non-exclusive,
+   worldwide license to make use of the Item on one Website. You are eligible
+   to receive the Security and Bug updates of the Item within next two years.
+
+3. You are licensed to use the Item to create one single End Product for yourself
+   or for one client.
+
+4. You can create one End Product for a client, and you can transfer that single
+   End Product to your client for any fee. This license is then transferred
+   to your client.
+
+5. You can modify or manipulate the Item. You can combine the Item with other works
+   and make a derivative work from it. The resulting works are subject to the terms
+   of this license.
+
+6. You can’t Sell the End Product, except to one client. (If you or your client
+   want to Sell the End Product, you will need the Reseller License.)
+
+7. You can’t re-distribute the Item as stock, in a tool or template, or with source
+   files. You can’t do this with an Item either on its own or bundled with other
+   items, and even if you modify the Item. You can’t re-distribute or make
+   available the Item as-is or with superficial modifications.
+
+8. You can’t use the Item in any application allowing an end user to customise
+   a digital product to their specific needs, such as an “on demand”,
+   “made to order” or “build it yourself” application. You can use the Item
+   in this way only if you purchase a separate license for each final product
+   incorporating the Item that is created using the application.
+
+9. Although you can modify the Item and therefore delete unwanted components
+   before creating your single End Product, you can’t extract and use a single
+   component of an Item on a stand-alone basis.
+
+10. You must not permit an end user of the End Product to extract the Item and use
+    it separately from the End Product.
+
+11. You can’t use an Item in a logo, trademark, or service mark.
+
+12. You can only use the Item for lawful purposes.
+
+13. This license can be terminated if you breach it. If that happens, you must stop
+    making copies of or distributing the End Product until you remove the Item from it.
+
+14. The author of the Item retains ownership of the Item but grants you the license on
+    these terms for free (0€). This license is between the author of the Item and you.
+
+15. The Item is provided "as is", without warranty of any kind, express or implied,
+    including but not limited to the warranties of merchantability, fitness
+    for a particular purpose and noninfringement. In no event shall the author
+    be liable for any claim, damages or other liability, whether in an action
+    of contract, tort or otherwise, arising from, out of or in connection with
+    the Item or the use or other dealings in the Item.
