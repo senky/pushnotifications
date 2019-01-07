@@ -49,9 +49,9 @@
 			  <li class="nav-item nav-custom-link">
 				<a class="nav-link" href="https://senky.github.io/pushnotifications/#features" title="See highligtht features of the extension">Features <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
 			  </li>
-			  <!-- <li class="nav-item nav-custom-link">
-				<a class="nav-link" href="#testimonials">Testimonials <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
-			  </li> -->
+			  <li class="nav-item nav-custom-link">
+				<a class="nav-link" href="https://senky.github.io/pushnotifications/#demo">Demo <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+			  </li>
 			  <li class="nav-item nav-custom-link">
 				<a class="nav-link" href="https://senky.github.io/pushnotifications/#pricing" title="See pricing options">Pricing <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
 			  </li>
