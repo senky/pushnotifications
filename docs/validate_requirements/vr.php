@@ -159,6 +159,7 @@
 		<p>Buy once, enjoy forever.</p>
 		</div>
 		<div class="row">
+			<!--
 		<div class="col-md-4">
 			<div class="pricing-box">
 			<h3>Translator License</h3>
@@ -208,6 +209,7 @@
 			</div>
 			</div>
 		</div>
+	-->
 
 		<div class="col-md-4">
 			<div class="pricing-box">
@@ -253,7 +255,6 @@
 			</div>
 		</div>
 
-		<!--
 		<div class="col-md-4">
 			<div class="pricing-box">
 			<h3>Reseller License</h3>
@@ -275,7 +276,6 @@
 			</div>
 			</div>
 		</div>
-		-->
 		</div>
 		<div class="note-block">
 			<p>
@@ -311,7 +311,7 @@
 	</footer>
 	<!--  E N D  F O O T E R  -->
 
-
+<!--
 	<div class="modal fade" id="translatorLicenseModal" tabindex="-1" role="dialog" aria-labelledby="translatorLicenseModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered" role="document">
 			  <div class="modal-content">
@@ -335,7 +335,7 @@
 			  </div>
 			</div>
 		  </div>
-		
+		-->
 		  <div class="modal fade" id="standardLicenseModal" tabindex="-1" role="dialog" aria-labelledby="standardLicenseModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered" role="document">
 			  <div class="modal-content">
@@ -384,7 +384,6 @@
 			</div>
 		  </div>
 		
-		<!--
 		  <div class="modal fade" id="resellerLicenseModal" tabindex="-1" role="dialog" aria-labelledby="resellerLicenseModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered" role="document">
 			  <div class="modal-content">
@@ -407,7 +406,6 @@
 			  </div>
 			</div>
 		  </div>
-		-->
 		
 		  <div class="modal fade" id="requirementsModal" tabindex="-1" role="dialog" aria-labelledby="requirementsModalLabel" aria-hidden="true">
 			  <div class="modal-dialog modal-dialog-centered" role="document">
