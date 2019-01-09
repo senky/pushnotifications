@@ -483,6 +483,7 @@
 						<li>English (UK and US)</li>
 						<li>French</li>
 						<li>Italian</li>
+						<li>Portugese (BR)</li>
 						<li>Slovak</li>
 					  </ul>
 					</div>
