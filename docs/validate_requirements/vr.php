@@ -487,6 +487,7 @@
 						<li>Portugese (BR)</li>
 						<li>Slovak</li>
 						<li>Spanish (casual and formal)</li>
+						<li>Turkish</li>
 					  </ul>
 					</div>
 				  </div>
