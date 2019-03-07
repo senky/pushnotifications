@@ -484,10 +484,12 @@
 						<li>French</li>
 						<li>German (casual and formal)</li>
 						<li>Italian</li>
+						<li>Polish</li>
 						<li>Portugese (BR)</li>
 						<li>Slovak</li>
 						<li>Spanish (casual and formal)</li>
 						<li>Turkish</li>
+						<li>Vietnamese</li>
 					  </ul>
 					</div>
 				  </div>
