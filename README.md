@@ -19,3 +19,12 @@ Browser and Mobile Notifications is a premium phpBB extension by Jakub Senko, an
 ## [Buy your license now](https://senky.github.io/pushnotifications/)
 or
 [see detailed information](https://senky.github.io/pushnotifications/).
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
+-------------
+Also see: [Infinite Scroll Extension](https://senky.github.io/infinitescroll/)
