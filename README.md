@@ -27,4 +27,4 @@ or
 <br />
 
 -------------
-Also see: [Infinite Scroll Extension](https://senky.github.io/infinitescroll/)
+Also see: [Infinite Scroll Extension](https://senky.github.io/infinitescroll/), [Mixed Content Fixer Extension](https://senky.github.io/httpproxy/)
