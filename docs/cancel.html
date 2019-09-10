@@ -181,36 +181,6 @@
 		<p><br>But your own experience is irreplaceable. Demo is therefore available:</p>
 		<a href="https://phpbbpn.herokuapp.com" class="btn btn-regular" target="_blank" title="Launch demo of Browser and Mobile Notifications Extension">Launch demo</a>
 		</div>
-		<!--<div class="row">
-		<div class="col-md-6">
-			<div class="testimonial-box">
-			<div class="row personal-info">
-				<div class="col-md-2 col-xs-2">
-				<div class="profile-picture review-one"></div>
-				</div>
-				<div class="col-md-10 col-xs-10">
-				<h6>Joshua M. Salas <span class="rating">5 <i class="icon ion-md-star"></i></span></h6>
-				<small>Marketing Intelligence | Author & Content Creator</small>
-				</div>
-			</div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque, tortor nec mattis feugiat, velit purus euismod odio, quis vulputate velit urna sit amet enim. Maecenas vulputate auctor ligula sed sollicitudin.</p>
-			</div>
-		</div>
-		<div class="col-md-6">
-			<div class="testimonial-box">
-			<div class="row personal-info">
-				<div class="col-md-2 col-xs-2">
-				<div class="profile-picture review-one"></div>
-				</div>
-				<div class="col-md-10 col-xs-10">
-				<h6>Michael Edwards <span class="rating">5 <i class="icon ion-md-star"></i></span></h6>
-				<small>Seo Consultant | Author & Content Creator</small>
-				</div>
-			</div>
-			<p>In euismod, metus ac elementum tincidunt, dui eros ullamcorper lorem, at euismod augue augue quis leo. Fusce non dui augue. In hac habitasse platea dictumst. Mauris quis lacinia mauris. Proin ut pretium quam. Nam at ex finibus.</p>
-			</div>
-		</div>
-		</div>-->
 	</div>
 	</section>
 	<!-- E N D  T E S T I M O N I A L S -->
@@ -273,62 +243,10 @@
 		<p>Buy once, enjoy forever.</p>
 		</div>
 		<div class="row">
-			<!--
-		<div class="col-md-4">
-			<div class="pricing-box">
-			<h3>Translator License</h3>
-			<h6 style="font-weight: normal;">FREE</h6>
-			<small>forever</small>
-			<p>Help me translate this extension into your language</p>
-			<div class="divider-light"></div>
-			<ul>
-				<li><i class="far fa-check-circle demo"></i>1 site license</li>
-				<li><i class="far fa-check-circle demo"></i>Security and bug fixes</li>
-				<li style="padding-bottom: 11px;"><i class="far fa-check-circle demo"></i>New feature updates after<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;translating new entries</li>
-			</ul>
-			<style>
-				#translator-btn {
-				position: relative;
-				width: 100%;
-				}
-				#translator-btn:before {
-				content: "";
-				display: block;
-				padding-top: 25.8%;
-				}
-				#translator-btn a {
-				position:  absolute;
-				top: 0;
-				left: 0;
-				bottom: 0;
-				right: 0;
-				background-color: #ffc439;
-				color: #000000;
-				font-weight: bold;
-				font-size: 17px;
-				border: 1px solid #db901e;
-				border-radius: 5px !important;
-				margin-top: 20px;
-				padding: 0;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				}
-			</style>
-			<div id="translator-btn" class="text-center">
-				<a href="#" class="contact-btn btn btn-regular" title="Contact author using email">Contact author</a>
-			</div>
-			<div class="text-center">
-				<a class="license-link" href="javascript:;" data-toggle="modal" data-target="#translatorLicenseModal" title="See details of Translator License">See license details</a>
-			</div>
-			</div>
-		</div>
-	-->
-
 		<div class="col-md-4">
 			<div class="pricing-box">
 			<h3>Standard License</h3>
-			<h6>15€</h6>
+			<h6 id="standard-price">$15</h6>
 			<small>forever</small>
 			<p>phpBB notifications directly to your users' browsers</p>
 			<div class="divider-light"></div>
@@ -339,7 +257,7 @@
 				<li><i class="far fa-times-circle demo"></i>New feature updates</li>
 			</ul>
 			<div class="text-center">
-				<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VNVQVLK2W73C8" title="Buy Standard License now"><img style="width: 100%; margin-top: 20px;" src="https://www.paypalobjects.com/webstatic/mktg/merchant_portal/button/buynow.en.png" alt="Buy Standard License"></a>
+				<a id="standard-link" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PK8GVW25C239E" title="Buy Standard License now"><img style="width: 100%; margin-top: 20px;" src="https://www.paypalobjects.com/webstatic/mktg/merchant_portal/button/buynow.en.png" alt="Buy Standard License"></a>
 			</div>
 			<div class="text-center">
 				<a class="license-link" href="javascript:;" data-toggle="modal" data-target="#standardLicenseModal" title="See details of Standard License">See license details</a>
@@ -350,7 +268,7 @@
 		<div class="col-md-4">
 			<div class="pricing-box">
 			<h3>Extended License</h3>
-			<h6>59€</h6>
+			<h6 id="extended-price">$59</h6>
 			<small>forever</small>
 			<p>Use on all your boards with all new features yet to come</p>
 			<div class="divider-light"></div>
@@ -361,7 +279,7 @@
 				<li><i class="far fa-check-circle demo"></i>New feature updates <span class="demo">¡Hot!</span></li>
 			</ul>
 			<div class="text-center">
-				<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MB2ECFL3XKBTC" title="Buy Extended License now"><img style="width: 100%; margin-top: 20px;" src="https://www.paypalobjects.com/webstatic/mktg/merchant_portal/button/buynow.en.png" alt="Buy Extended License"></a>
+				<a id="extended-link" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AD53VXAY6TBDL" title="Buy Extended License now"><img style="width: 100%; margin-top: 20px;" src="https://www.paypalobjects.com/webstatic/mktg/merchant_portal/button/buynow.en.png" alt="Buy Extended License"></a>
 			</div>
 			<div class="text-center">
 				<a class="license-link" href="javascript:;" data-toggle="modal" data-target="#extendedLicenseModal" title="See details of Extended License">See license details</a>
@@ -372,7 +290,7 @@
 		<div class="col-md-4">
 			<div class="pricing-box">
 			<h3>Reseller License</h3>
-			<h6>999€</h6>
+			<h6 id="reseller-price">$999</h6>
 			<small>forever</small>
 			<p>Charge your clients for installation and/or using of this extension</p>
 			<div class="divider-light"></div>
@@ -383,7 +301,7 @@
 				<li><i class="far fa-check-circle demo"></i>New feature updates</li>
 			</ul>
 			<div class="text-center">
-				<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=R57HSV62PYBHS" title="Buy Reseller License now"><img style="width: 100%; margin-top: 20px;" src="https://www.paypalobjects.com/webstatic/mktg/merchant_portal/button/buynow.en.png" alt="Buy Reseller License"></a>
+				<a id="reseller-link" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YBHZUWKP4B6FE" title="Buy Reseller License now"><img style="width: 100%; margin-top: 20px;" src="https://www.paypalobjects.com/webstatic/mktg/merchant_portal/button/buynow.en.png" alt="Buy Reseller License"></a>
 			</div>
 			<div class="text-center">
 				<a class="license-link" href="javascript:;" data-toggle="modal" data-target="#resellerLicenseModal" title="See details of Reseller License">See license details</a>
@@ -418,38 +336,12 @@
 	<div class="container">
 		<div class="row">
 		<div class="col-md-6 col-xs-12 offset-md-6">
-			<small>2018 &copy; All rights reserved. Template by <a href="https://www.behance.net/gallery/67279127/The-Seo-Company-Free-PSD-Template" target="blank">Diego Velázquez</a>.</small>
+			<small>2019 &copy; All rights reserved. Template by <a href="https://www.behance.net/gallery/67279127/The-Seo-Company-Free-PSD-Template" target="blank">Diego Velázquez</a>.</small>
 		</div>
 		</div>
 	</div>
 	</footer>
 	<!--  E N D  F O O T E R  -->
-
-<!--
-	<div class="modal fade" id="translatorLicenseModal" tabindex="-1" role="dialog" aria-labelledby="translatorLicenseModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered" role="document">
-			  <div class="modal-content">
-				<div class="modal-header">
-				  <h5 class="modal-title" id="translatorLicenseModalLabel">Translator License</h5>
-				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				  </button>
-				</div>
-				<div class="modal-body">
-				  <h2>In short</h2>
-				  <ul>
-					<li>You <b>can</b> use extension on one website.</li>
-					<li>You <b>can</b> create another product for one client on one website.</li>
-					<li>You <b>cannot</b> use extension on multiple websites.</li>
-					<li>You <b>cannot</b> create another product for multiple clients and/or one client used on multiple website.</li>
-				  </ul>
-				  <h2>Full license</h2>
-				  <p><a href="translator-license.txt" title="Download Translator License now">Download full license</a></p>
-				</div>
-			  </div>
-			</div>
-		  </div>
-		-->
 		  <div class="modal fade" id="standardLicenseModal" tabindex="-1" role="dialog" aria-labelledby="standardLicenseModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered" role="document">
 			  <div class="modal-content">
@@ -602,7 +494,7 @@
 						<li>Polish</li>
 						<li>Portugese (BR)</li>
 						<li>Slovak</li>
-						<li>Spanish (casual and formal)</li>
+						<!--<li>Spanish (casual and formal)</li>-->
 						<li>Turkish</li>
 						<li>Vietnamese</li>
 					  </ul>
@@ -625,6 +517,8 @@
           return atob(part);
         }).join('')
       });
+
+      var a=new Date,b=Math.max((new Date(a.getFullYear(),0,1)).getTimezoneOffset(),(new Date(a.getFullYear(),6,1)).getTimezoneOffset())/60*-1,c,d,e;-2<b&&0>=b?(c=["\u00a315","https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6ZXZRP3L63UUJ"],d=["\u00a359","https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LNQKUHS7PRB8E"],e=["\u00a3999","https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SU3K9LJTLF7W4"]):0<b&&4>=b&&(c=["15\u20ac","https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VNVQVLK2W73C8"],d=["59\u20ac","https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MB2ECFL3XKBTC"],e=["999\u20ac","https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=R57HSV62PYBHS"]);c&&(document.getElementById("standard-price").textContent=c[0],document.getElementById("standard-link").href=c[1],document.getElementById("extended-price").textContent=d[0],document.getElementById("extended-link").href=d[1],document.getElementById("reseller-price").textContent=e[0],document.getElementById("reseller-link").href=e[1]);
     </script>
 
   </body>
