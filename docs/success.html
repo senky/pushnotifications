@@ -181,7 +181,7 @@
 		<h2>Want to see it with your own eyes?</h2>
 		<p>The extension is used across the globe, being it USA, France or Australia, everyone shares one thing - satisfaction.</p>
 		<p><br>But your own experience is irreplaceable. Demo is therefore available:</p>
-		<a href="https://phpbbpn.herokuapp.com" class="btn btn-regular" target="_blank" title="Launch demo of Browser and Mobile Notifications Extension">Launch demo</a>
+		<a id="demo-link" class="btn btn-regular" target="_blank" title="Launch demo of Browser and Mobile Notifications Extension">Launch demo</a>
 		</div>
 	</div>
 	</section>
@@ -519,6 +519,8 @@
           return atob(part);
         }).join('')
       });
+
+      document.querySelector('#demo-link').href = atob('aHR0cHM6Ly9waHBiYnBuLmhl') + atob('cm9rdWFwcC5jb20=');
 
       var a=new Date,b=Math.max((new Date(a.getFullYear(),0,1)).getTimezoneOffset(),(new Date(a.getFullYear(),6,1)).getTimezoneOffset())/60*-1,c,d,e;-2<b&&0>=b?(c=["\u00a315","https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6ZXZRP3L63UUJ"],d=["\u00a359","https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LNQKUHS7PRB8E"],e=["\u00a3999","https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SU3K9LJTLF7W4"]):0<b&&4>=b&&(c=["15\u20ac","https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VNVQVLK2W73C8"],d=["59\u20ac","https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MB2ECFL3XKBTC"],e=["999\u20ac","https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=R57HSV62PYBHS"]);c&&(document.getElementById("standard-price").textContent=c[0],document.getElementById("standard-link").href=c[1],document.getElementById("extended-price").textContent=d[0],document.getElementById("extended-link").href=d[1],document.getElementById("reseller-price").textContent=e[0],document.getElementById("reseller-link").href=e[1]);
     </script>
