@@ -7,11 +7,10 @@
       ga('set', 'anonymizeIp', true);
 
       ga('require', 'cleanUrlTracker');
-      ga('require', 'impressionTracker');
-      ga('require', 'maxScrollTracker');
-      ga('require', 'mediaQueryTracker');
+      ga('require', 'impressionTracker', {
+		elements: ['pricing']
+	  });
       ga('require', 'outboundLinkTracker');
-      ga('require', 'pageVisibilityTracker');
 
       ga('send', 'pageview');
     </script>
