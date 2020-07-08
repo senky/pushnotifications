@@ -27,4 +27,4 @@ or
 <br />
 
 -------------
-Also see: [Mixed Content Fixer Extension](https://premiumbb.github.io/httpproxy/)
+Also see: [Mixed Content Fixer Extension](https://phpbb.pro/httpproxy/)
