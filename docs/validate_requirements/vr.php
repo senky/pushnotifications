@@ -227,7 +227,6 @@
 		<div class="note-block">
 			<p>
 			* Make sure to check <a href="javascript:;" data-toggle="modal" data-target="#requirementsModal" title="See extension reqirements">extension requirements</a>, <a href="javascript:;" data-toggle="modal" data-target="#stylesModal" title="See supported styles">supported styles</a> and <a href="javascript:;" data-toggle="modal" data-target="#translationsModal" title="See supported translations">translations</a> before purchase.
-			<br>You can also see <a href="https://github.com/senky/pushnotifications/blob/master/CHANGELOG.md">changelog</a>.
 			</p>
 			<p></p>
 		</div>
