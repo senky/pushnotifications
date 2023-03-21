@@ -1,4 +1,4 @@
-# [phpBB | Browser and Mobile Notifications Extension](https://senky.github.io/pushnotifications/)
+# [phpBB | Browser and Mobile Notifications Extension](https://phpbb.pro/pushnotifications)
 
 Browser and Mobile Notifications is a premium phpBB extension by Jakub Senko, an [official extensions developer](https://github.com/orgs/phpbb-extensions/teams/extensions-development-team).
 
@@ -16,15 +16,6 @@ Browser and Mobile Notifications is a premium phpBB extension by Jakub Senko, an
   <dd>Being a member of Extension Customisations group and one of 3 members of Official Extensions Development Team tells itself about the quality of the extension.</dd>
 </dl>
 
-## [Buy your license now](https://senky.github.io/pushnotifications/)
+## [Buy your license now](https://phpbb.pro/pushnotifications)
 or
-[see detailed information](https://senky.github.io/pushnotifications/).
-
-<br />
-<br />
-<br />
-<br />
-<br />
-
--------------
-Also see: [Forms Extension](https://phpbb.pro/forms/), [Mixed Content Fixer Extension](https://phpbb.pro/httpproxy/)
+[see detailed information](https://phpbb.pro/pushnotifications).
